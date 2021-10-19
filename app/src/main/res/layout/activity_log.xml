@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.login.LogActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="登入界面"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="账号"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="52dp" />
+    <EditText
+        android:id="@+id/et_passwords"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="密码"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="114dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:text="注册"
+            tools:layout_editor_absoluteX="261dp"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:text="登入"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="177dp" />
+    </LinearLayout>
+</LinearLayout>

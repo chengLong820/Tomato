@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="10dp">
+
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_marginBottom="10dp"
+      android:gravity="center"
+      android:text="开始任务"
+      android:textColor="#000000"
+      android:textSize="20sp" />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="任务名称"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/task_name"
+        android:text="番茄钟"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="任务类型"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/task_type"
+        android:text="未定义类型"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="工作时长(分钟)"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/work_time"
+        android:text="25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:inputType="number"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="休息时长(分钟)"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/rest_time"
+        android:text="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:inputType="number"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_true"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:text="确定"
+
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/button_false"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:text="取消"
+        android:textSize="10sp" />
+  </LinearLayout>
+</LinearLayout>
